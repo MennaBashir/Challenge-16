@@ -1,0 +1,202 @@
+:root{
+--back:#fafafa;
+--tx:#b7b7b9;
+--h:#462b3f;
+--back2:#f9f4fa;
+--c1:#d841fe;
+--c2:#c141fe;
+--c3:#c141fe;
+}
+body{
+    background-color: var(--back);
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+position: relative;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background-color: rebeccapurple;
+    width: 450px;
+    height: calc(100vh - 120px);
+    background-image: linear-gradient(to bottom, #bf40ff 10%,#ac3dfe 40%,#913afe 100%);
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 230px;
+    margin-left: -100px;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    background-color: #f9f4fa;
+    width: 320px;
+    margin-left: -10px;
+    right: 0;
+    height: 80vh;
+    border-top-left-radius: 270px;
+    margin-top: 174px;
+}
+.phone{
+    width: 350px;
+    position: absolute;
+    border: 12px solid white;
+    left:240px;
+    background-color: var(--back2);
+    top: 60px;
+    border-radius: 35px;
+    transform: scale(.8);
+    box-shadow: 4px 3px 8px #d3cccc61;
+}
+.phone header{
+    background-image: linear-gradient(to right, #bf40ff 10%,#ac3dfe 20%,var(--c1) 100%);
+    display: flex;
+    padding: 50px 20px 12px;
+    border-radius: 30px 30px 12px 12px;
+    position: relative;
+}
+.phone header::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 190px;
+    height: 30px;
+    top: -3px;
+    text-align: center;
+    right: 67px;
+    border-radius: 4px 4px 16px 16px;
+}
+.phone header > img{
+    width: 15px;
+    cursor: pointer;
+}
+.phone header img:nth-child(2){
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 35px;
+    margin-left: 10px;
+}
+.phone .txt{
+    color: white;
+    font-family: sans-serif;
+    font-size: 11px;
+    margin-left: 20px;
+    letter-spacing: .2px;
+}
+.phone header .txt + img{
+    width: 4px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.phone .txt p{
+    color: #f5f5f563;
+}
+.sec1 .i{
+    direction: ltr;
+    padding: 10px;
+    width: 200px;
+    background-color: #e7d8f0;
+    margin-top: 20px;
+    border-radius: 14px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #a83cfbd1;
+    margin-bottom: -8px;
+}
+.sec1 .you{
+    margin-top: 30px;
+    direction: rtl;
+    margin-bottom: -8px;
+    margin-right: 15px;
+}
+.sec1 .we{
+    direction: ltr;
+    padding: 10px;
+    width: 200px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 14px;
+    font-size: 15px;
+    color: #1e1d1de0;
+    margin-bottom: -8px;
+    margin-left: auto;
+}
+.sec1 .you img{
+   width: 60px;
+   border-radius: 12px;
+}
+.sec1 .record{
+    background-image: linear-gradient(to right, var(--c1) 5%,#913afe 100%);
+    position: relative;
+}
+.sec1 .record img{
+    width: 15px;
+    opacity: .6;
+}
+.sec1 .record span:first-of-type{
+    margin-left: 5px;
+    color: #f5f5f5eb;
+}
+.sec1 .record span:last-child{
+    position: absolute;
+    right: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 17px;
+}
+.sec1 .record span{
+    color: white;
+}
+footer .tp input{
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    width: 95%;
+    margin-left: 10px;
+    outline: none;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+footer .tp img{
+    position: absolute;
+    background-color: #422c56;
+    right: 12px;
+    bottom: 26px;
+    padding: 7px;
+    border-radius: 50%;
+    width: 34px;
+    cursor: pointer;
+}
+.container .txt2{
+    width: 400px;
+    z-index: 10;
+    top: 300px;
+    right: 260px;
+    position: absolute;
+}
+.container .txt2 h1{
+    margin-bottom: 20px;
+    color: #422c56;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.container .txt2 p{
+    line-height: 20px;
+    color: var(--tx);
+    letter-spacing: .5px;
+    font-size: 18px;
+}
+@media(max-width:1112px){
+    .container .txt2{
+      right: 0;
+      margin-left: auto;
+      width: 310px
+    }
+}
